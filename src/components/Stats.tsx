@@ -2,9 +2,9 @@ import { useEffect, useRef, useState } from 'react'
 import { motion, useInView } from 'framer-motion'
 
 const STATS = [
-  { value: 2400, suffix: '+', label: 'Beta waitlist members' },
-  { value: 18000, suffix: '+', label: 'Focus sessions logged in beta' },
-  { value: 96, suffix: '%', label: "Beta testers who'd recommend Flow Ledger" },
+  { value: 4800, suffix: '+', label: 'Beta testers already onboard' },
+  { value: 92000, suffix: '+', label: 'Focus sessions completed in beta' },
+  { value: 120000, suffix: '+', label: 'AI productivity insights generated' },
 ]
 
 export function Stats() {

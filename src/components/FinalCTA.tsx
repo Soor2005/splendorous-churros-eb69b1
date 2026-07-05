@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { ArrowRight, Bell, ShieldCheck, Sparkles, Users } from 'lucide-react'
+import { ArrowRight, Bell, ShieldCheck, Sparkles, UsersRound } from 'lucide-react'
 import { WAITLIST_URL } from '../config'
 
 export function FinalCTA() {
@@ -31,14 +31,14 @@ export function FinalCTA() {
         <div className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
             href={WAITLIST_URL}
-            className="group inline-flex items-center gap-2 rounded-xl bg-gradient-to-b from-[#8C7CFF] to-[#7C6CF2] px-9 py-4 text-base font-semibold text-white shadow-[0_1px_0_rgba(255,255,255,0.2)_inset,0_15px_40px_-10px_rgba(124,108,242,0.8)] transition-transform hover:scale-[1.02] active:scale-[0.98]"
+            className="group inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-b from-[#8C7CFF] to-[#7C6CF2] px-9 py-4 text-base font-semibold text-white shadow-[0_1px_0_rgba(255,255,255,0.2)_inset,0_15px_40px_-10px_rgba(124,108,242,0.8)] transition-transform hover:scale-[1.02] active:scale-[0.98]"
           >
             Join Beta Waitlist
             <ArrowRight size={18} className="transition-transform group-hover:translate-x-0.5" />
           </a>
           <a
             href={WAITLIST_URL}
-            className="inline-flex items-center gap-2 rounded-xl border border-white/15 bg-white/5 px-9 py-4 text-base font-semibold text-white/85 backdrop-blur transition-colors hover:bg-white/10"
+            className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/15 bg-white/5 px-9 py-4 text-base font-semibold text-white/85 backdrop-blur transition-colors hover:bg-white/10"
           >
             <Bell size={16} />
             Notify Me at Launch
@@ -47,20 +47,21 @@ export function FinalCTA() {
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm text-white/45">
           <span className="inline-flex items-center gap-1.5">
-            <Sparkles size={15} /> Free during beta
+            <Sparkles size={15} /> Early Access to New Features
           </span>
           <span className="inline-flex items-center gap-1.5">
-            <Users size={15} /> Limited early-access spots
+            <UsersRound size={15} /> Growing Beta Community
           </span>
           <span className="inline-flex items-center gap-1.5">
-            <ShieldCheck size={15} /> No spam, ever
+            <ShieldCheck size={15} /> Privacy-First by Design
           </span>
         </div>
 
         <p className="mx-auto mt-8 max-w-xl text-xs leading-relaxed text-white/40">
           <span className="font-semibold text-white/55">Beta Notice:</span> Flow
           Ledger is under active development. Some features are still being refined
-          ahead of public release. Your feedback helps us shape every update.
+          ahead of public release, and the product is not yet available for general
+          download.
         </p>
       </motion.div>
     </section>

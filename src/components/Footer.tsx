@@ -1,4 +1,3 @@
-import { Activity } from 'lucide-react'
 import { SITE_NAME } from '../config'
 
 export function Footer() {
@@ -8,8 +7,8 @@ export function Footer() {
     <footer className="border-t border-white/10 px-4 py-12">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 sm:flex-row sm:justify-between">
         <a href="#top" className="flex items-center gap-2 font-semibold tracking-tight">
-          <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-gradient-to-br from-[#7C6CF2] to-[#9C8CFF]">
-            <Activity size={14} className="text-white" strokeWidth={2.5} />
+          <span className="flex h-7 w-7 items-center justify-center overflow-hidden rounded-lg">
+            <img src="/logo.png" alt={`${SITE_NAME} logo`} className="h-full w-full object-cover" />
           </span>
           <span className="text-sm">{SITE_NAME}</span>
         </a>

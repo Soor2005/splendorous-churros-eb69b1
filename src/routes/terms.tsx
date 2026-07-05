@@ -14,8 +14,8 @@ function Terms() {
         <h1 className="text-3xl font-semibold tracking-tight">Terms of Service</h1>
         <p className="mt-6 leading-relaxed text-white/60">
           By joining the Flow Ledger beta and using the application, you agree to use
-          it responsibly and in accordance with applicable laws. Full terms of
-          service will be published here before general release.
+          it responsibly and in accordance with applicable laws. Full terms of service
+          will be published here before public launch.
         </p>
       </main>
       <Footer />

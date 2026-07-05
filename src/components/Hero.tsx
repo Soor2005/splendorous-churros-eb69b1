@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { ArrowRight, Bell, Timer, TrendingUp, Zap } from 'lucide-react'
+import { ArrowRight, Timer, TrendingUp, Zap } from 'lucide-react'
 import { WAITLIST_URL } from '../config'
 
 export function Hero() {
@@ -17,12 +17,9 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
         >
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium text-white/70 backdrop-blur">
-            <span className="relative flex h-1.5 w-1.5">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#7C6CF2] opacity-75" />
-              <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-[#7C6CF2]" />
-            </span>
-            Now in private beta &middot; Launching soon
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#7C6CF2]/40 bg-[#7C6CF2]/10 px-4 py-1.5 text-xs font-semibold tracking-wide text-[#B4A9FF] shadow-[0_0_20px_-4px_rgba(124,108,242,0.8)]">
+            <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-[#B4A9FF]" />
+            NOW IN PRIVATE BETA
           </div>
 
           <h1 className="text-4xl font-semibold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
@@ -37,7 +34,8 @@ export function Hero() {
           <p className="mt-6 max-w-lg text-lg leading-relaxed text-white/60">
             Flow Ledger runs quietly in the background, automatically tracking your work
             and measuring real productivity — so you can build focus without ever
-            touching a manual timer. Currently in closed beta, opening up soon.
+            touching a manual timer. A premium productivity app, currently in closed
+            beta.
           </p>
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -49,16 +47,15 @@ export function Hero() {
               <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
             </a>
             <a
-              href="#preview"
+              href="#features"
               className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/15 bg-white/5 px-7 py-3.5 text-sm font-semibold text-white/85 backdrop-blur transition-colors hover:bg-white/10"
             >
-              <Bell size={15} />
-              Notify Me at Launch
+              Learn More
             </a>
           </div>
 
           <p className="mt-5 text-xs text-white/40">
-            Currently in private beta &middot; Limited early-access spots &middot; No spam, ever
+            Limited beta spots &middot; Windows 10 &amp; 11 &middot; No spam, ever
           </p>
         </motion.div>
 
@@ -85,7 +82,7 @@ function AppMockup() {
           <span className="h-2.5 w-2.5 rounded-full bg-white/20" />
           <span className="h-2.5 w-2.5 rounded-full bg-white/20" />
           <span className="h-2.5 w-2.5 rounded-full bg-white/20" />
-          <span className="ml-3 text-xs text-white/40">Flow Ledger — Beta Preview</span>
+          <span className="ml-3 text-xs text-white/40">Flow Ledger</span>
         </div>
 
         <div className="space-y-5 p-6">

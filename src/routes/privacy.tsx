@@ -13,9 +13,10 @@ function Privacy() {
       <main className="mx-auto max-w-2xl px-4 pb-24 pt-40">
         <h1 className="text-3xl font-semibold tracking-tight">Privacy Policy</h1>
         <p className="mt-6 leading-relaxed text-white/60">
-          Flow Ledger tracks activity locally on your device to generate productivity
-          insights. We do not sell your data. A full, detailed privacy policy will be
-          published here before general release.
+          Flow Ledger is currently in closed beta. The app tracks activity locally on
+          your device first, to generate productivity insights, and we do not sell
+          your data. A full, detailed privacy policy will be published here before
+          public launch.
         </p>
       </main>
       <Footer />
