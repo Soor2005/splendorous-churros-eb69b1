@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion'
 import {
-  ArrowRight,
   Award,
   Headphones,
   MessageSquareHeart,
@@ -8,6 +7,7 @@ import {
   UsersRound,
 } from 'lucide-react'
 import type { LucideIcon } from 'lucide-react'
+import { WaitlistForm } from './WaitlistForm'
 
 const BENEFITS: Array<{ icon: LucideIcon; label: string }> = [
   { icon: Sparkles, label: 'Early access to new features' },
@@ -63,31 +63,7 @@ export function BetaProgram() {
           ))}
         </div>
 
-        <motion.form
-          initial={{ opacity: 0, y: 14 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-60px' }}
-          transition={{ duration: 0.5, delay: 0.35 }}
-          onSubmit={(e) => e.preventDefault()}
-          className="mx-auto mt-12 flex max-w-xl flex-col gap-3 sm:flex-row"
-        >
-          <input
-            type="email"
-            required
-            placeholder="you@example.com"
-            className="w-full flex-1 rounded-xl border border-white/15 bg-white/[0.04] px-5 py-3.5 text-sm text-white placeholder:text-white/35 outline-none transition-colors focus:border-[#7C6CF2]/60 focus:bg-white/[0.06]"
-          />
-          <button
-            type="submit"
-            className="group inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-b from-[#8C7CFF] to-[#7C6CF2] px-7 py-3.5 text-sm font-semibold text-white shadow-[0_1px_0_rgba(255,255,255,0.2)_inset,0_10px_30px_-8px_rgba(124,108,242,0.7)] transition-transform hover:scale-[1.02] active:scale-[0.98]"
-          >
-            Join the Beta Waitlist
-            <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
-          </button>
-        </motion.form>
-        <p className="mt-4 text-center text-xs text-white/40">
-          We&apos;ll only email you about beta access and launch updates. No spam, ever.
-        </p>
+        <WaitlistForm />
       </motion.div>
     </section>
   )
